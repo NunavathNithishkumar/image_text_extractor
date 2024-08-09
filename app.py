@@ -1,28 +1,3 @@
-# from PIL import Image
-import pytesseract
-
-# # Path to the Tesseract executable
-# pytesseract.pytesseract.tesseract_cmd = r'C:\Users\nunav\AppData\Local\Programs\Tesseract-OCR\tesseract.exe'
-
-# # Path to your image file
-# image_path = 'D:\images\Sample Invoice image.png'
-
-# # Open an image file
-# img = Image.open(image_path)
-
-# # Use pytesseract to do OCR on the image
-# text = pytesseract.image_to_string(img)
-
-# # Print the extracted text
-# print(text)
-
-
-
-
-
-
-
-
 import os
 from PyPDF2 import PdfReader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -36,6 +11,8 @@ from langchain.prompts import PromptTemplate
 from dotenv import load_dotenv
 from PIL import Image
 import pytesseract
+
+pytesseract.pytesseract.tesseract_cmd = r'C:\Users\nunav\AppData\Local\Programs\Tesseract-OCR\tesseract.exe'
 
 load_dotenv()
 os.getenv("GOOGLE_API_KEY")
