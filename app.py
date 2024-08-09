@@ -2,7 +2,7 @@
 import pytesseract
 
 # # Path to the Tesseract executable
-pytesseract.pytesseract.tesseract_cmd = r'C:\Users\nunav\AppData\Local\Programs\Tesseract-OCR\tesseract.exe'
+# pytesseract.pytesseract.tesseract_cmd = r'C:\Users\nunav\AppData\Local\Programs\Tesseract-OCR\tesseract.exe'
 
 # # Path to your image file
 # image_path = 'D:\images\Sample Invoice image.png'
